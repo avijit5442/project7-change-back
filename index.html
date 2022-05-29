@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background:radial-gradient(pink,gray);
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            color:white
+        }
+        
+        #violet{
+            background-color: violet;
+            color:white
+        }
+        #indigo{
+            background-color:indigo;
+            color:white
+        }
+        #blue{
+            background-color: blue;
+            color:white
+        }
+        #green{
+            background-color: green;
+            color:white
+        }
+        #yellow{
+            background-color: yellow;
+            color:gray
+        }
+        #orange{
+            background-color: orange;
+            color:white
+        }
+        #red{
+            background-color: red;
+            color:white
+        }
+        button{
+            height:20px;
+            width:60px;
+            margin: 5px;
+            border-radius:20px;
+            box-shadow:0 0 20px greenyellow
+        }
+        #time{
+            font-size: 40px;
+            color: blueviolet;
+            text-shadow: 10px 1px 6px #aa1818;  
+        }
+    </style>
+</head>
+<script>
+    violet=()=>{
+        document.body.style.background="violet"
+    }
+    indigo=()=>{
+        document.body.style.background="indigo"
+    }
+    blue=()=>{
+        document.body.style.background="blue"
+    }
+    green=()=>{
+        document.body.style.background="green"
+    }
+    yellow=()=>{
+        document.body.style.background="yellow"
+        text.style.color="gray"
+    }
+    orange=()=>{
+        document.body.style.background="orange"
+    }
+    
+    
+    </script>
+<body>
+<h4 id="text">Click on color To change background color</h4>
+
+<button id="violet" onclick="violet()">violet</button>
+<button id="indigo"onclick="indigo()">indigo</button>
+<button id="blue"onclick="blue()">Blue</button>
+<button id="green"onclick="green()">green</button>
+<button id="yellow"onclick="yellow()">yellow</button>
+<button id="orange"onclick="orange()">orange</button>
+<button id="red">red</button>
+<br/>
+<span id="time"><span id="hour">h</span>:<span id="minute">m</span>:<span id="second">s</span></span>
+<script>
+    red.addEventListener("click",RED)
+    function RED(){
+        document.body.style.background="red";
+    }
+</script>
+<script>
+
+    setInterval(myfunction,1000)
+    function myfunction(){ 
+   
+    var h=new Date().getHours();
+    if(h>12){
+        h=h-12
+    }
+    if(h<10){
+        h="0"+h
+    }
+    hour.innerHTML=h;;
+    var m=new Date().getMinutes();
+    if(m<10){
+        m="0"+m
+    }
+    minute.innerHTML=m;
+    var s=new Date().getSeconds();
+    if(s<10){
+        s="0"+s
+    }
+    second.innerHTML=s; 
+    }  
+</script>
+</body>
+</html>
